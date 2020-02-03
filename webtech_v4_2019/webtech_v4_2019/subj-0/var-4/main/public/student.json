@@ -1,0 +1,17 @@
+{
+    "name":"Gigi",
+    "year":3,
+    "credits":120,
+    "superpowers":["power1","power2","power3"],
+    "grades":[{
+        "class":"tw",
+        "homeworkSubmitted":true,
+        "examGrade":10
+    },
+    {
+        "class":"multimedia",
+        "homeworkSubmitted":true,
+        "examGrade":10
+    }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "accountHolder":"Gigi",
+    "currentBalance":100,
+    "iban":"abc1132",
+    "currency":"EUR",
+    "transactions":[{
+        "amount":100,
+        "transactionType":"send",
+        "beneficiaryName":"Popescu",
+        "approved":true
+    },
+    {
+        "amount":200,
+        "transactionType":"send",
+        "beneficiaryName":"Georgescu",
+        "approved":true
+    }
+    ]
+}
