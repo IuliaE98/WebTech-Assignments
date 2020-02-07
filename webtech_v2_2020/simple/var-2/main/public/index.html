@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple app</title>
+    <script>
+        window.onload = async () => {
+            let btn = document.getElementById('del')
+            let name = document.getElementById('name')
+
+            btn.onclick = async () => {
+                await deleteCar(name.value)
+                await load();
+            } 
+
+            let deleteCar = async (name) => {
+                try{
+                    await fetch(`/cars/${name}`,{
+                        method:'delete'
+                    })
+
+                } catch(err){
+                    console.log(err)
+                }
+
+            }
+
+            let tbl = document.getElementById('main')
+
+            let load = async () => {
+                try{
+                    let response = await fetch(`/cars`)
+                    let data = await response.json()
+                    let rows = data.map((e) => `
+                        <tr>
+                            <td>
+                                ${e.name}
+                            </td>
+                            <td>
+                                ${e.color}
+                            </td>
+                        </tr>
+                    `)
+                    console.warn(rows)
+                    tbl.innerHTML = rows.join('')
+                }
+                catch(err){
+                    console.warn(err)
+                }
+            }
+            load('')
+        }
+    </script>
+</head>
+<body>
+    A simple app
+    <input type="text" placeholder="name" id="name" />
+    <input type="button" id="del" value="delete"/>
+    <table id=main></table>
+</body>
+</html>

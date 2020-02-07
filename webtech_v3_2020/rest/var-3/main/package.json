@@ -1,0 +1,19 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --noStackTrace --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.3",
+    "supertest": "^4.0.2"
+  }
+}
