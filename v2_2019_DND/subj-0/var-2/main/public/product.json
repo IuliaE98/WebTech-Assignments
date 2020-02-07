@@ -1,0 +1,17 @@
+{
+        "name": "maria"
+        "description": "abc",
+        "sizes": [5,6,3],
+        "inventory": [{
+            "supplierName":"sdf",
+            "quantity": 43, 
+            "aquisitionPrice": 23
+            
+        },
+        {
+            "supplierName": "are",
+            "quantity": 43,
+            "aquisitionPrice": 23
+        }]
+}
+
