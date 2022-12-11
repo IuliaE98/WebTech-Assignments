@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.4.0",
     "puppeteer": "^2.0.0",
